@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Flask App{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Bosh sahifa</a> |
+        <a href="/about">Biz haqimizda</a> |
+        <a href="/contact">Bog'lanish</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
